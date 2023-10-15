@@ -18,7 +18,6 @@ PROGRAM:*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
-#define NULL 0
 typedef struct list
 {
     int no;
