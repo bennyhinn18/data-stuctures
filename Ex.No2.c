@@ -33,7 +33,7 @@ int main()
 {
     int n, i = 1, opt;
     p = NULL;
-    printf("%d", sizeof(LIST));
+    printf("%lu", sizeof(LIST));
     printf("Enter the no of nodes :\n ");
     scanf("%d", &n);
     count = n;
