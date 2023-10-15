@@ -1,4 +1,4 @@
-Ex.no:2 	LINKED LIST IMPLEMENTATION OF LIST
+/*Ex.no:2 	LINKED LIST IMPLEMENTATION OF LIST
 AIM:
 To implement List using Linked List in C.
 ALGORITHM:
@@ -13,7 +13,7 @@ deletion - to delete an element from the chosen position in the linked list
 display – to display the elements of the linked List.
 exit – to exit from the program
 
-PROGRAM:
+PROGRAM:*/
 #include<stdio.h>
 #include<conio.h>
 #include<stdlib.h>
