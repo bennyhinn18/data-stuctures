@@ -1,5 +1,4 @@
-
-Ex.no:1a ARRAY IMPLEMENTATION OF STACK
+/*Ex.no:1a ARRAY IMPLEMENTATION OF STACK
 AIM:
 To implement stack using array in C.
 ALGORITHM:
@@ -12,7 +11,7 @@ push - to insert an element into the stack.
 pop - to delete an element from the stack
 display – to display the elements of a stack.
 Exit – to exit from the program
-
+*/
 #include<stdio.h>
 void main()
 {
