@@ -20,6 +20,7 @@ exit – to exit from the program
 PROGRAM:
 */
 #include <stdio.h>
+#include <stdlib.h>
 #define MAX 50
 int queue_array[MAX];
 int rear = -1;
@@ -27,7 +28,6 @@ int front = -1;
 void insert();
 void delete ();
 void display();
-void 
 int main()
 {
     int choice;
