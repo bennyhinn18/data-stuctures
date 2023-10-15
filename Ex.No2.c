@@ -14,7 +14,7 @@ display – to display the elements of the linked List.
 exit – to exit from the program
 
 PROGRAM:*/
-#include <conio.h>
+
 #include <stdio.h>
 #include <stdlib.h>
 #define NULL 0
