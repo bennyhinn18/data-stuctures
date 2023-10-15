@@ -52,7 +52,7 @@ default:
 printf("Wrong choice \n");
 } /*End of switch*/
 } /*End of while*/
-return0;} /*End of main()*/
+return 0;} /*End of main()*/
 insert()
 {
 int add_item;
