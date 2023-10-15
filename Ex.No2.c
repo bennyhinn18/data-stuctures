@@ -73,7 +73,6 @@ int main()
         printf("\nEnter your option \n");
     }
     while (opt != 4);
-    getch();
     return 0;
 }
 void create()
