@@ -15,9 +15,9 @@ exit – to exit from the program
 
 PROGRAM:*/
 #include <conio.h>
-#include <process.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #define NULL 0
 typedef struct list
 {
