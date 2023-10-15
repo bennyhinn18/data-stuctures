@@ -1,4 +1,4 @@
-/*Ex.no:4					 
+/*Ex.no:4
   ARRAY IMPLEMENTATION OF QUEUE
 
 AIM:
@@ -24,7 +24,7 @@ PROGRAM:
 int queue_array[MAX];
 int rear = - 1;
 int front = - 1;
-void main()
+int main()
 {
 int choice;
 while (1)
