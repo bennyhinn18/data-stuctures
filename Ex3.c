@@ -64,6 +64,7 @@ case 4: // To exit
 exit(0);
 }
 }
+return 0;
 }
 
 void display()
