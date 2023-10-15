@@ -30,7 +30,6 @@ PROGRAM:*/
 
 #include "stdio.h"
 #include "stdlib.h"
-#include "conio.h"
 void pop();
 void push(int value);
 void display();
@@ -40,7 +39,7 @@ int data;
 struct node *link;
 };
 struct node *top=NULL,*temp;
-void main()
+int main()
 {
 int choice,data;
 while(1) //infinite loop is used to insert/delete infinite number of elements in stack
