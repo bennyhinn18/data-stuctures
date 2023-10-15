@@ -30,7 +30,7 @@ void insert(void);
 void delet(void);
 void display(void);
 int j, pos, k = 1, count;
-void main()
+int main()
 {
     int n, i = 1, opt;
     p = NULL;
@@ -74,6 +74,7 @@ void main()
     }
     while (opt != 4);
     getch();
+    return 0;
 }
 void create()
 {
