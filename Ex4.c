@@ -54,7 +54,7 @@ int main()
     }     /*End of while*/
     return 0;
 } /*End of main()*/
-insert()
+void insert()
 {
     int add_item;
     if (rear == MAX - 1)
@@ -70,7 +70,7 @@ insert()
         queue_array[rear] = add_item;
     }
 } /*End of insert()*/
-delete ()
+void delete ()
 {
     if (front == -1 || front > rear)
     {
@@ -83,7 +83,7 @@ delete ()
         front = front + 1;
     }
 } /*End of delete() */
-display()
+void display()
 {
     int i;
     if (front == -1)
