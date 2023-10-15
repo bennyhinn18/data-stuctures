@@ -28,88 +28,77 @@ exit – to exit from the program
 
 PROGRAM:*/
 
-#include <stdio.h>
-#include <stdlib.h>
-
+#include "stdio.h"
+#include "stdlib.h"
+#include "conio.h"
 void pop();
 void push(int value);
 void display();
-
 struct node
 {
-    int data;
-    struct node *link;
+int data;
+struct node *link;
 };
-
-struct node *top = NULL, *temp;
-
-int main()
+struct node *top=NULL,*temp;
+void main()
 {
-    int choice, data;
-    while (1)
-    {
-        printf("\n1.Push\n2.Pop\n3.Display\n4.Exit\n");
-        printf("\nEnter your choice: ");
-        scanf("%d", &choice);
-        switch (choice)
-        {
-        case 1:
-            // To push a new element into stack
-            printf("Enter a new element: ");
-            scanf("%d", &data);
-            push(data);
-            break;
-        case 2:
-            // To pop an element from the stack
-            pop();
-            break;
-        case 3:
-            // To display the elements of the stack
-            display();
-            break;
-        case 4:
-            // To exit from the program
-            exit(0);
-        default:
-            printf("Wrong choice\n");
-        } /*End of switch*/
-    } /*End of while*/
-    return 0;
-} /*End of main()*/
-
-void push(int value)
+int choice,data;
+while(1) //infinite loop is used to insert/delete infinite number of elements in stack
 {
-    temp = (struct node *)malloc(sizeof(struct node));
-    temp->data = value;
-    temp->link = top;
-    top = temp;
-} /*End of push()*/
-
-void pop()
+printf("\n1.Push\n2.Pop\n3.Display\n4.Exit\n");
+printf("\nEnter ur choice:");
+scanf("%d",&choice);
+switch(choice)
 {
-    if (top == NULL)
-    {
-        printf("Stack is empty\n");
-        return;
-    }
-    temp = top;
-    top = top->link;
-    printf("Popped element is %d\n", temp->data);
-    free(temp);
-} /*End of pop()*/
+case 1: //To push a new element into stack
+printf("Enter a new element :");
+scanf("%d",&data);
+push(data);
+break;
+case 2: // pop the element from stack
+pop();
+break;
+case 3: // Display the stack elements
+display();
+break;
+case 4: // To exit
+exit(0);
+}
+}
+}
 
 void display()
 {
-    if (top == NULL)
-    {
-        printf("Stack is empty\n");
-        return;
-    }
-    temp = top;
-    printf("Stack elements are:\n");
-    while (temp != NULL)
-    {
-        printf("%d\n", temp->data);
-        temp = temp->link;
-    }
-} /*End of display()*/
+temp=top;
+if(temp==NULL)
+{
+printf("\nStack is empty\n");
+}
+printf("\n The Contents of the Stack are...");
+while(temp!=NULL)
+{
+printf(" %d ->",temp->data);
+temp=temp->link;
+}
+}
+void push(int data)
+{
+temp=(struct node *)malloc(sizeof(struct node)); // creating a space for the new element.
+temp->data=data;
+temp->link=top;
+top=temp;
+display();
+}
+void pop()
+{
+if(top!=NULL)
+{
+printf("The poped element is %d",top->data);
+top=top->link;
+}
+else
+{
+printf("\nStack Underflow");
+}
+display();
+}
