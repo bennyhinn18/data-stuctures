@@ -147,7 +147,7 @@ t = t->next;
 }
 printf( "\t %d\t",t->no );
 }
-
+/*
 Output
 
 4Enter the no of nodes :
@@ -180,4 +180,4 @@ Enter your option
 4
 
 RESULT:
-Thus, the program to implement List ADT using Linked list in C was executed successfully
+Thus, the program to implement List ADT using Linked list in C was executed successfully*/
