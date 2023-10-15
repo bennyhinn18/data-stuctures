@@ -1,4 +1,4 @@
-/*Ex.no:5						
+/*Ex.no:5
 LINKED LIST IMPLEMENTATION OF QUEUE
 
 AIM:
@@ -37,7 +37,7 @@ void display();
 void create();
 void queuesize();
 int count = 0;
-void main()
+int main()
 {
 int no, ch, e;
 printf("\n 1 - Enque");
@@ -85,6 +85,7 @@ printf("Wrong choice, Please enter correct choice ");
 break;
 }
 }
+return 0;
 }
 /* Create an empty queue */
 void create()
