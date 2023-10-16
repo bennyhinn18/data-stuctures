@@ -53,6 +53,7 @@ int main()
                 break;
             default:
                 printf("Invalid choice\n");
+                printf("\n\tMENU\n1.PUSH\n2.POP\n3.DISPLAY\n4.EXIT\n");
                 break;
         }
     }
