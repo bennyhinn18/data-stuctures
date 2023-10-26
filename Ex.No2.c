@@ -25,10 +25,10 @@ typedef struct list
     struct list *next;
 } LIST;
 LIST *p, *t, *h, *y, *ptr, *pt;
-void create(void);
-void insert(void);
-void delet(void);
-void display(void);
+void create();
+void insert();
+void delet();
+void display();
 int j, pos, k = 1, count;
 int main()
 {
