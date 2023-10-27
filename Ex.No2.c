@@ -1,4 +1,6 @@
 
+
+
 /*Ex.no:2 	LINKED LIST IMPLEMENTATION OF LIST
 AIM:
 To implement List using Linked List in C.
