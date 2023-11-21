@@ -15,36 +15,35 @@ Search – to search an element from the Binary search tree
 exit – to exit from the program
 
 PROGRAM:*/
-#include&lt;stdio.h&gt;
+#include<stdio.h>
 int main()
 {
 int c, first, last, middle, n, search, array[100];
-printf(&quot;Enter number of elements:\n&quot;);
-scanf(&quot;%d&quot;,&amp;n);
-printf(&quot;Enter %d integers:\n&quot;, n);
-for (c = 0; c &lt; n; c++)
-scanf(&quot;%d&quot;,&amp;array[c]);
-printf(&quot;Enter the value to find:\n&quot;);
-scanf(&quot;%d&quot;, &amp;search);
+printf("Enter number of elements:\n");
+scanf("%d",&n);
+printf("Enter %d integers:\n", n);
+for (c = 0; c < n; c++)
+scanf("%d",&array[c]);
+printf("Enter the value to find:\n");
+scanf("%d", &search);
 first = 0;
 last = n - 1;
 middle = (first+last)/2;
-while (first &lt;= last) {
+while (first <= last) {
 
-if (array[middle] &lt; search)
+if (array[middle] < search)
 first = middle + 1;
 else if (array[middle] == search) {
-printf(&quot;%d is present at index %d.\n&quot;, search, middle+1);
+printf("%d is present at index %d.\n", search, middle+1);
 break;
 }
 else
 last = middle - 1;
 middle = (first + last)/2;
 }
-if (first &gt; last)
-printf(&quot;Not found! %d is not present in the list.\n&quot;, search);
+if (first > last)
+printf("Not found! %d is not present in the list.\n", search);
 return 0;
-getch();
 }
 /*Output
 
