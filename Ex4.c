@@ -102,5 +102,4 @@ void display()
         printf("\n");
     }
 }
-/*...
-Displaying Ex.No 4 ARRAY IMPLEMENTATION OF QUEUE.txt.*/
+
