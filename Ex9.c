@@ -1,4 +1,4 @@
-Ex. No: 9 		IMPLEMENTATION OF DIJIKSTRA’S ALGORITHM
+/*Ex. No: 9 		IMPLEMENTATION OF DIJIKSTRA’S ALGORITHM
 AIM:
 To write a program to implementation of Dijkstra’s algorithm.
 ALGORITHM:
@@ -9,9 +9,8 @@ ALGORITHM:
 5. For current node, consider all its unvisited neighbors and calculate their distance (from the initial node). For example, if current node (A) has distance of 6, and an edge connecting it with another node (B) is 2, the distance to B through A will be 6+2=8. If this distance is less than the previously recorded distance (infinity in the beginning, zero for the initial node), overwrite the distance.
 6. When we are done considering all neighbors of the current node, mark it as visited. A visited node will not be checked ever again; its distance recorded now is final and minimal.
 7. Set the unvisited node with the smallest distance (from the initial node) as the next "current node" and continue from step 3.
-PROGRAM:
+PROGRAM:*/
 #include<stdio.h>
-#include<conio.h>
 #define INFINITY 9999
 #define MAX 10
 void dijkstra(int G[MAX][MAX],int n,int startnode);
@@ -90,10 +89,11 @@ printf("<-%d",j);
 
 
 
-
+/*
 Output
 
 RESULT:
 
 Thus the C program to implement Dijikstra’s algorithm was written and executed
 successfully.
+*/

@@ -1,4 +1,4 @@
-Ex. No: 10 		IMPLEMENTATION OF PRIM’S ALGORITHM
+/*Ex. No: 10 		IMPLEMENTATION OF PRIM’S ALGORITHM
 AIM:
 To write a C program to implement Prim’s Algorithm
 ALGORITHM:
@@ -12,7 +12,7 @@ c) Update key value of all adjacent vertices of u.
 4)To update the key values, iterate through all adjacent vertices. For every adjacent vertex v, if weight of edge u-v is less than the previous key value of v, update the key value as weight of u-v
 5)The idea of using key values is to pick the minimum weight edge from cut. The key values are used only for vertices which are not yet included in MST, the key value for these vertices
 indicate the minimum weight edges connecting them to the set of vertices included in MST.
-PROGRAM:
+PROGRAM:*/
 #include<stdio.h>
 int a,b,u,v,n,i,j,ne=1;
 int visited[10]={0},min,mincost=0,cost[10][10];
@@ -72,7 +72,7 @@ printf("\n Minimun cost=%d",mincost);
 
 
 
-
+/*
 RESULT:
 
-Thus the C program is written for Prims algorithm and is executed successfully.
+Thus the C program is written for Prims algorithm and is executed successfully.*/

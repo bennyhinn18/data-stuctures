@@ -1,4 +1,4 @@
-Ex.no:8 		IMPLEMENTATION OF HEAPS USING PRIORITY QUEUE 
+/*Ex.no:8 		IMPLEMENTATION OF HEAPS USING PRIORITY QUEUE 
 AIM: 
 To implement the Heap using Priority Queue in C. 
 ALGORITHM: 
@@ -10,7 +10,7 @@ Insert – to insert an element into the Priority Queue.
 Delete - to delete an element from the Priority Queue. 
 Display – to display the elements of the Priority Queue. 
 exit – to exit from the program 
-PROGRAM: 
+PROGRAM:*/ 
 #include<stdio.h> 
 #include<malloc.h> 
 void insert(); 
@@ -103,7 +103,7 @@ printf("\n%d priority =%d\n",temp->info,temp->priority);
 } 
 } 
 } 
-OUTPUT: 
+/*OUTPUT: 
 [1] INSERTION [2] DELETION [3] DISPLAY [4] EXIT :1 
 ENTER THE ELT.TO BE INSERTED : 2 
 ENTER ITS PRIORITY : 1 
@@ -126,3 +126,4 @@ QUEUE IS:
 
 RESULT: 
 Thus, the program to implement the Heap using Priority Queue in C was executed successfully.
+*/
